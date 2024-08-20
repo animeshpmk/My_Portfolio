@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    padding-top: 55px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    width: 100%;
+    background-color: rgb(3, 41, 74);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    padding: 0 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul #ani{
+    margin:10vw;
+    height:10vw;
+    width: 10vw;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(178, 178, 233);
+    font-size: 1.01em;
+}
+
+#firstSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#leftSection {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#purple {
+    color: rgb(102, 72, 250);
+}
+
+#rightSection img {
+    width: 80%;
+    max-width: 400px;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+}
+#rightSection img:hover {
+    animation: moveUpDown 2s infinite alternate;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+#btn1, #btn2 {
+    height: 40px;
+    padding: 0 20px;
+    background-color: rgb(178, 178, 233);
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn1:hover, #btn2:hover {
+    background-color: rgb(150, 150, 200);
+}
+
+#line {
+    border: 0;
+    height: 2px;
+    background: rgb(178, 178, 233);
+    margin: 20px 0;
+    max-width: 80%;
+    margin: auto;
+}
+
+#educationSection {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    margin:10vw;
+}
+#educationSection #quote{
+    margin-top:-2vw;
+    font-size: 0.8rem;
+    margin-bottom: 2vw;
+}
+#cap{
+    height:4vw;
+    width: 4vw;
+    transform: rotate(330deg);
+}
+
+#educationSection h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: rgb(178, 178, 233);
+}
+
+#education-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#education-card {
+    background-color: rgb(3, 41, 74);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    overflow: hidden; /* Ensure the image does not overflow */
+}
+
+#education-card:hover #education-icon img {
+    transform: scale(1.5); /* Scale image to 150% */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+#education-icon img {
+    width: 50px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+
+#education-card:hover #education-icon img {
+    transform: scale(3); /* Increases the size to 150% */
+    transition: transform 0.7s ease-in-out; /* Smooth transition */
+}
+
+
+#education-icon img {
+    width: 50px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+#education-details h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: white;
+}
+
+#education-details p {
+    margin-bottom: 5px;
+    color: rgb(178, 178, 233);
+}
+
+#secondSection h1{
+    text-align: center;
+    margin-bottom: 2vw;
+    font-size: 2.5rem;
+    color:rgb(178, 178, 233);
+    margin:6vw;
+}
+
+#experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin:1vw;
+    margin-bottom: 3vw;
+}
+
+#experience-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#experience-item img {
+    width: 45%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#writings {
+    width: 45%;
+    max-width: 500px;
+}
+
+#contact-section {
+    padding: 40px 20px;
+    text-align: center;
+    margin-top:5vw;
+}
+
+#contact-section form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact-section label {
+    font-size: 1rem;
+}
+
+#contact-section input, .contact-section textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    resize: none;
+}
+
+#contact-section button {
+    padding: 10px;
+    background-color: rgb(178, 178, 233);
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-section button:hover {
+    background-color: rgb(150, 150, 200);
+}
+
+
+
+
+
+
+footer {
+    background-color: rgb(3, 41, 74);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    width: 100%;
+}
+
+#footer-content {
+    display: flex;
+    justify-content: space-between; /* Distribute space between sections */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Limit the width for large screens */
+    padding: 0 20px; /* Add padding to the left and right */
+}
+
+#bottom-left, #footer-right {
+    flex: 1; /* Allow these sections to grow equally */
+}
+
+#social-media {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex: 1; /* Allow this section to grow equally */
+}
+
+#social-media a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+#social-media img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+#social-media img:hover {
+    transform: scale(1.1);
+}
+
+#footer-right {
+    text-align: right;
+}
+
+#footer-right img {
+    height: 2vw;
+    width: 2vw;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+        text-align: center;
+    }
+
+    #footer-content {
+        flex-direction: column; /* Stack the sections vertically */
+        align-items: center; /* Center items */
+    }
+
+    #social-media {
+        margin: 20px 0; /* Add margin between social media and other content */
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    #leftSection {
+        font-size: 2rem;
+    }
+    
+    #experience-item {
+        flex-direction: column;
+    }
+    
+    #experience-item img, .writings {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    #buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+
+}
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px); /* Move the image up by 20px */
+    }
+}
+/* Light and dark mode styles */
+body.light-mode {
+    background: rgb(0, 0, 33);
+    color: white;
+}
+
+body.dark-mode {
+    background: linear-gradient(to right, rgb(210, 210, 239), rgb(72, 72, 120));
+
+    color: white;
+}
+
+
+/* Toggle switch styling */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}

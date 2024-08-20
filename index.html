@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>newportfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="left">Animesh's Portfolio</div>
+            <div id="right">
+                <ul>
+                    <li><a href="#firstSection">Home</a></li>
+                    <li><a href="#educationSection">About</a></li>
+                    <li><a href="#secondSection">Projects</a></li>
+                    <li><a href="#contact-section">Contact Me</a></li>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="firstSection">
+            <div id="leftSection">
+                <div>Hi, My name is <span id="purple">Animesh</span></div>
+                <div>and I am a passionate web developer.</div>
+            </div>
+            <div id="rightSection">
+                <img src="designs/png.png" alt="style">
+            </div>
+        </section>
+
+        <div id="buttons">
+            <a href="designs/animeshShip.pdf" download="Animesh_Pramanik_Resume.pdf">
+                <button id="btn1">Download Resume</button>
+            </a>
+             
+        </div>
+        <hr id="line">
+
+        <section id="educationSection">
+            <h1><img id="cap" src="designs/cap2.png">My Education</h1>
+            <p id="quote">(Education is not the learning of facts, but the training of the mind to think.)</p>
+            <div id="education-cards">
+                <div id="education-card">
+                    <div id="education-icon">
+                        <img src="designs/gal.jpeg" alt="Graduation Cap Icon">
+                    </div>
+                    <div id="education-details">
+                        <h2>BTech</h2>
+                        <p>Galgotias University</p>
+                        <p>2021 - Present</p>
+                    </div>
+                </div>
+                <div id="education-card">
+                    <div id="education-icon">
+                        <img src="designs/ayyappa.jpg" alt="School Icon">
+                    </div>
+                    <div id="education-details">
+                        <h2>12th Grade</h2>
+                        <p>Sree Ayyappa Public School, Bokaro</p>
+                        <p>2018 - 2020</p>
+                    </div>
+                </div>
+                <div id="education-card">
+                    <div id="education-icon">
+                        <img src="designs/dav.png" alt="School Icon">
+                    </div>
+                    <div id="education-details">
+                        <h2>10th Grade</h2>
+                        <p>DAV Public School, Kusunda, Dhanbad</p>
+                        <p>2018</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <hr id="line">
+
+        <section id="secondSection">
+            <h1>Past Experience</h1>
+            <div id="experience">
+                <div id="experience-item">
+                    <img src="designs/Screenshot (33).png" alt="">
+                    <div id="writings">
+                        <h2>Tic-Tac-Toe</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla optio dignissimos id laborum eum! Possimus aut rerum voluptate alias dolorem.</p>
+                    </div>
+                </div>
+                <div id="experience-item">
+                    <img src="designs/Screenshot (4) - Copy.png" alt="">
+                    <div id="writings">
+                        <h2>Save Environment</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis repellat dignissimos esse distinctio porro accusamus, excepturi commodi labore debitis ipsa?</p>
+                    </div>
+                </div>
+                <div id="experience-item">
+                    <img src="designs/Screenshot (5).png" alt="">
+                    <div id="writings">
+                        <h2>Personal Portfolio</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit est dignissimos facilis perspiciatis maiores quo placeat, non molestias nobis qui?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr id="line">
+
+        <section id="contact-section">
+            <h1>Contact Me</h1>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="user_email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer-content">
+            <div id="bottom-left">
+                <p id="greet">Thank you for visiting my portfolio. Connect with me over socials.</p>
+                
+            </div>
+
+            <div id="social-media">
+                <a href="https://www.instagram.com/animesh_pmk?igsh=MW9yMnVteWdvdGNmcA==" target="_blank">
+                    <img src="designs/insta.png" alt="Instagram">
+                </a>
+                <a href="https://linkedin.com/in/animeshpramanik7809" target="_blank">
+                    <img src="designs/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/animeshpmk" target="_blank">
+                    <img src="designs/git.png" alt="GitHub">
+                </a>
+            </div>
+            <div id="footer-right">
+            <p>&copy; 2024 Animesh Pramanik. All rights reserved.</p>
+            <p>Designed with <img id="heart" src="designs/heart.png"> by Animesh</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="script.js"
+    type="text/javascript"></script>
+
+    
+</body>
+
+</html>
